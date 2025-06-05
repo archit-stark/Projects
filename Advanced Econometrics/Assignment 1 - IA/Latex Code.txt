@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{booktabs}  % For better table formatting
+\usepackage{caption}   % For custom caption formatting
+\usepackage{graphicx}  % To enable resizebox for table
+
+\captionsetup{skip=0pt, justification=centering}  % Reduce space between title and table, center the title
+
+\begin{document}
+
+\setcounter{table}{1}  % Set the table number to 2 (since it's incremented after this)
+\begin{flushleft}  % Left align the table
+\begin{table}[htbp]
+    \caption{Descriptive Statistics}  % Simple title, no extra text
+    \label{tab:desc_stats}
+    \resizebox{\textwidth}{!}{  % Resize the table to fit the page width
+    \begin{tabular}{lcccccccc}
+        \toprule
+        & \textbf{No of Obs} & \textbf{Mean} & \textbf{Median} & \textbf{Std Dev} & \textbf{Skewness} & \textbf{Excess Kurtosis} & \textbf{Min} & \textbf{Max} \\
+        \midrule
+        \textbf{V1} & 2000 & 69.211311 & 69.026500 & 6.157390 & 0.073437 & -0.252180 & 51.041275 & 87.324332 \\
+        \textbf{V2} & 2000 & 74.506205 & 74.592051 & 5.782674 & 0.018712 & -0.069098 & 56.678226 & 93.344119 \\
+        \textbf{V3} & 2000 & 86.092599 & 85.948986 & 5.225615 & 0.049079 & -0.000813 & 68.504259 & 102.644232 \\
+        \textbf{V4} & 2000 & 78.620294 & 78.552662 & 5.156608 & -0.042983 & -0.109199 & 61.628978 & 94.387767 \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption*{\footnotesize Note: The data shown is based on heart rate measurements for four different variables.}
+\end{table}
+\end{flushleft}
+
+\end{document}

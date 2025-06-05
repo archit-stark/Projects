@@ -1,0 +1,30 @@
+Delta Testing
+
+for T = 300 & 500
+Dual Bargraph SADF vs Delta (N = 2,5)
+
+
+Main Sim
+
+
+ONE BIG GRAPH:
+for each num series
+for each num_rw
+triple bar graph (coint_fact = 0.4,0.6,0.8) for each T
+Y = SADF (3 values for each T)
+X = T
+
+Possible then 3D chart for the above
+
+
+Plot:
+- Smaller sample --> coint_frac matters, Larger sample --> coint_frac doesn't matter
+
+- Does 40 or 60 % really matter ?
+
+
+
+Questions:
+- Does 40/60% really matter ?
+- Does coint_fract really matter? for each length
+

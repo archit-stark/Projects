@@ -1,0 +1,194 @@
+@article{Diba1988,
+  author    = {Behzad T. Diba and Herschel I. Grossman},
+  title     = {Explosive Rational Bubbles in Stock Prices?},
+  journal   = {The American Economic Review},
+  volume    = {78},
+  number    = {3},
+  pages     = {520--530},
+  year      = {1988},
+  publisher = {American Economic Association},
+  url       = {https://www.jstor.org/stable/1809149}
+}
+
+@article{EngleGranger1987,
+ ISSN = {00129682, 14680262},
+ URL = {http://www.jstor.org/stable/1913236},
+ abstract = {The relationship between co-integration and error correction models, first suggested in Granger (1981), is here extended and used to develop estimation procedures, tests, and empirical examples. If each element of a vector of time series xt first achieves stationarity after differencing, but a linear combination $\alpha ^{\prime }x_{t}$ is already stationary, the time series xt are said to be co-integrated with co-integrating vector α. There may be several such co-integrating vectors so that α becomes a matrix. Interpreting $\alpha ^{\prime }x_{t}=0$ as a long run equilibrium, co-integration implies that deviations from equilibrium are stationary, with finite variance, even though the series themselves are nonstationary and have infinite variance. The paper presents a representation theorem based on Granger (1983), which connects the moving average, autoregressive, and error correction representations for co-integrated systems. A vector autoregression in differenced variables is incompatible with these representations. Estimation of these models is discussed and a simple but asymptotically efficient two-step estimator is proposed. Testing for co-integration combines the problems of unit root tests and tests with parameters unidentified under the null. Seven statistics are formulated and analyzed. The critical values of these statistics are calculated based on a Monte Carlo simulation. Using these critical values, the power properties of the tests are examined and one test procedure is recommended for application. In a series of examples it is found that consumption and income are co-integrated, wages and prices are not, short and long interest rates are, and nominal GNP is co-integrated with M2, but not M1, M3, or aggregate liquid assets.},
+ author = {Robert F. Engle and C. W. J. Granger},
+ journal = {Econometrica},
+ number = {2},
+ pages = {251--276},
+ publisher = {[Wiley, Econometric Society]},
+ title = {Co-Integration and Error Correction: Representation, Estimation, and Testing},
+ urldate = {2025-05-31},
+ volume = {55},
+ year = {1987}
+}
+
+
+@article{Bhargava1986,
+    author = {Bhargava, Alok},
+    title = {On the Theory of Testing for Unit Roots in Observed Time Series},
+    journal = {The Review of Economic Studies},
+    volume = {53},
+    number = {3},
+    pages = {369-384},
+    year = {1986},
+    month = {07},
+    abstract = {This paper provides a framework for testing for a unit root in an observed time series against some alternatives considered previously by Anderson (1948). Some new tests for the unit root null hypothesis for the errors affecting a classical regression model against the non-stationary (including explosive) alternative hypothesis are developed. The previous results of Sargan and Bhargava (1983) and the new test statistics are then applied to test the simple random walk and the random walk with a constant drift null hypotheses against stationary and non-stationary one-sided alternatives. In each case, the test statistic is simplified in order that it could be viewed as a von Neumann type ratio and the exact significance points are tabulated. Finally, the unit root null hypotheses are tested using U.S. data on the velocity of money and the Michigan PSID.},
+    issn = {0034-6527},
+    doi = {10.2307/2297634},
+    url = {https://doi.org/10.2307/2297634},
+    eprint = {https://academic.oup.com/restud/article-pdf/53/3/369/4483433/53-3-369.pdf},
+}
+
+@techreport{Gallin2005,
+  author    = {Joshua Gallin},
+  title     = {The Long-Run Relationship between House Prices and Rents},
+  institution = {Federal Reserve Board},
+  year      = {2005},
+  month     = {February},
+  note      = {Federal Reserve Board, Finance and Economics Discussion Series},
+  url       = {https://www.federalreserve.gov/econres/feds/the-long-run-relationship-between-house-prices-and-rents.htm}
+}
+
+@misc{campbell2001valuation,
+  title={Valuation ratios and the long-run stock market outlook: An update},
+  author={Campbell, John Y and Shiller, Robert J},
+  year={2001},
+  publisher={National bureau of economic research Cambridge, Mass., USA}
+}
+
+@article{Mark1995,
+ ISSN = {00028282},
+ URL = {http://www.jstor.org/stable/2118004},
+ abstract = {Regressions of multiple-period changes in the log exchange rate on the deviation of the log exchange rate from its "fundamental value," display evidence that long-horizon changes in log nominal exchange rates contain an economically significant predictable component. To account for small-sample bias and size distortion in asymptotic tests, inference is drawn from bootstrap distributions generated under the null hypothesis that the log exchange rate is unpredictable. The bias-adjusted slope coefficients and R2's increase with the forecast horizon, and the out-of-sample point predictions generally outperform the driftless random walk at the longer horizons.},
+ author = {Nelson C. Mark},
+ journal = {The American Economic Review},
+ number = {1},
+ pages = {201--218},
+ publisher = {American Economic Association},
+ title = {Exchange Rates and Fundamentals: Evidence on Long-Horizon Predictability},
+ urldate = {2025-05-31},
+ volume = {85},
+ year = {1995}
+}
+
+@article{ChanWoo2006,
+  author    = {Hing Lin Chan and Kai Yin Woo},
+  title     = {Bubbles Detection for Inter-War European Hyperinflation: A Threshold Cointegration Approach},
+  journal   = {Journal of Economics and Finance},
+  volume    = {30},
+  number    = {2},
+  pages     = {169--185},
+  year      = {2006},
+  publisher = {Springer},
+  doi       = {10.1007/s12197-006-0007-5}
+}
+
+@article{Cagan1956,
+author="Cagan, P.",
+title="The monetary dynamics of hyperinflation",
+journal="Studies in the Quantity Theory if Money",
+publisher="University of Chicago Press",
+year="1956",
+URL="https://cir.nii.ac.jp/crid/1570291225954800256"
+}
+
+@article{Caner&Hansen2001,
+ ISSN = {00129682, 14680262},
+ URL = {http://www.jstor.org/stable/2692267},
+ abstract = {This paper develops an asymptotic theory of inference for an unrestricted two-regime threshold autoregressive (TAR) model with an autoregressive unit root. We find that the asymptotic null distribution of Wald tests for a threshold are nonstandard and different from the stationary case, and suggest basing inference on a bootstrap approximation. We also study the asymptotic null distributions of tests for an autoregressive unit root, and find that they are nonstandard and dependent on the presence of a threshold effect. We propose both asymptotic and bootstrap-based tests. These tests and distribution theory allow for the joint consideration of nonlinearity (thresholds) and nonstationary (unit roots). Our limit theory is based on a new set of tools that combine unit root asymptotics with empirical process methods. We work with a particular two-parameter empirical process that converges weakly to a two-parameter Brownian motion. Our limit distributions involve stochastic integrals with respect to this two-parameter process. This theory is entirely new and may find applications in other contexts. We illustrate the methods with an application to the U.S. monthly unemployment rate. We find strong evidence of a threshold effect. The point estimates suggest that the threshold effect is in theshort-run dynamics, rather than in the dominate root. While the conventional ADF test for a unit root is insignificant, our TAR unit root tests are arguably significant. The evidence is quite strong that the unemployment rate is not a unit root process, and there is considerable evidence that the series is a stationary TAR process.},
+ author = {Mehmet Caner and Bruce E. Hansen},
+ journal = {Econometrica},
+ number = {6},
+ pages = {1555--1596},
+ publisher = {[Wiley, Econometric Society]},
+ title = {Threshold Autoregression with a Unit Root},
+ urldate = {2025-05-31},
+ volume = {69},
+ year = {2001}
+}
+
+@article{Evans1991,
+ ISSN = {00028282},
+ URL = {http://www.jstor.org/stable/2006651},
+ author = {George W. Evans},
+ journal = {The American Economic Review},
+ number = {4},
+ pages = {922--930},
+ publisher = {American Economic Association},
+ title = {Pitfalls in Testing for Explosive Bubbles in Asset Prices},
+ urldate = {2025-05-31},
+ volume = {81},
+ year = {1991}
+}
+
+@article{Phillips2011,
+  author  = {Peter C. B. Phillips and Yangru Wu and Jun Yu},
+  title   = {Explosive Behavior in the 1990s Nasdaq: When Did Exuberance Escalate Asset Values?},
+  journal = {International Economic Review},
+  volume  = {52},
+  number  = {1},
+  pages   = {201--226},
+  year    = {2011},
+  publisher = {Economics Department of the University of Pennsylvania and the Osaka University Institute of Social and Economic Research Association},
+  url     = {https://ink.library.smu.edu.sg/soe_research/1265}
+}
+
+@article{Phillips2015,
+  author  = {Peter C. B. Phillips and Shuping Shi and Jun Yu},
+  title   = {Testing for Multiple Bubbles: Historical Episodes of Exuberance and Collapse in the S\&P 500},
+  journal = {International Economic Review},
+  volume  = {56},
+  number  = {4},
+  pages   = {1043--1078},
+  year    = {2015},
+  publisher = {Economics Department of the University of Pennsylvania and the Osaka University Institute of Social and Economic Research Association}
+}
+
+@article{Podhorsky2024,
+  author  = {Andrea Podhorsky},
+  title   = {Bursting the Bitcoin Bubble: Do Market Prices Reflect Fundamental Bitcoin Value?},
+  journal = {International Review of Financial Analysis},
+  volume  = {93},
+  pages   = {103158},
+  year    = {2024},
+  doi     = {10.1016/j.irfa.2024.103158},
+  url     = {https://doi.org/10.1016/j.irfa.2024.103158},
+  note    = {Open Access under CC BY license}
+}
+
+@techreport{Horie2016,
+  author    = {Tetsushi Horie and Yohei Yamamoto},
+  title     = {Testing for Speculative Bubbles in Large-Dimensional Financial Panel Data Sets},
+  institution = {Graduate School of Economics, Hitotsubashi University},
+  number    = {Discussion Paper Series No. 2016-04},
+  year      = {2016},
+  month     = {June},
+  url       = {https://hermes-ir.lib.hit-u.ac.jp/rs/bitstream/10086/28377/1/070econDP16-04.pdf},
+  note      = {Hitotsubashi University Discussion Paper Series}
+}
+
+@article{Potrykus2023,
+  author  = {Marcin Potrykus},
+  title   = {Price bubbles in commodity market – A single time series and panel data analysis},
+  journal = {Quarterly Review of Economics and Finance},
+  volume  = {87},
+  pages   = {110--117},
+  year    = {2023},
+  doi     = {10.1016/j.qref.2022.12.002},
+  url     = {https://doi.org/10.1016/j.qref.2022.12.002}
+}
+
+@article{Cunado2005,
+  author  = {J. Cuñado and L.A. Gil-Alana and F. Pérez de Gracia},
+  title   = {A test for rational bubbles in the NASDAQ stock index: A fractionally integrated approach},
+  journal = {Journal of Banking \& Finance},
+  volume  = {29},
+  number  = {10},
+  pages   = {2633--2654},
+  year    = {2005},
+  doi     = {10.1016/j.jbankfin.2004.10.003},
+  url     = {https://doi.org/10.1016/j.jbankfin.2004.10.003}
+}

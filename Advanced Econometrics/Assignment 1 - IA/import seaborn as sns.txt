@@ -1,0 +1,48 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Set Seaborn theme for aesthetics
+sns.set_theme(style="whitegrid")
+
+# Create the figure and the 2x2 subplots
+fig, axs = plt.subplots(2, 2, figsize=(12, 10), sharex=True, sharey=True)
+
+# Plot for V1, V1_avg_heart, and V1_filtered_new
+sns.lineplot(x=new_df_t3.index, y=new_df_t3['V1'], ax=axs[0, 0], label='V1', color='blue', linewidth=0.7)
+sns.lineplot(x=new_df_t3.index, y=new_df_t3['V1_avg_heart'], ax=axs[0, 0], label='V1_avg_heart', color='red', linewidth=0.7)
+sns.lineplot(x=new_df_t3.index, y=new_df_t3['V1_filtered_new'], ax=axs[0, 0], label='V1_filtered_new', color='green', linewidth=0.7)
+axs[0, 0].set_title('V1, V1_avg_heart, and V1_filtered_new')
+axs[0, 0].set_ylabel('Heart Rate')
+axs[0, 0].legend()
+
+# Plot for V2, V2_avg_heart, and V2_filtered_new
+sns.lineplot(x=new_df_t3.index, y=new_df_t3['V2'], ax=axs[0, 1], label='V2', color='blue', linewidth=0.7)
+sns.lineplot(x=new_df_t3.index, y=new_df_t3['V2_avg_heart'], ax=axs[0, 1], label='V2_avg_heart', color='red', linewidth=0.7)
+sns.lineplot(x=new_df_t3.index, y=new_df_t3['V2_filtered_new'], ax=axs[0, 1], label='V2_filtered_new', color='green', linewidth=0.7)
+axs[0, 1].set_title('V2, V2_avg_heart, and V2_filtered_new')
+axs[0, 1].set_ylabel('Heart Rate')
+axs[0, 1].legend()
+
+# Plot for V3, V3_avg_heart, and V3_filtered_new
+sns.lineplot(x=new_df_t3.index, y=new_df_t3['V3'], ax=axs[1, 0], label='V3', color='blue', linewidth=0.7)
+sns.lineplot(x=new_df_t3.index, y=new_df_t3['V3_avg_heart'], ax=axs[1, 0], label='V3_avg_heart', color='red', linewidth=0.7)
+sns.lineplot(x=new_df_t3.index, y=new_df_t3['V3_filtered_new'], ax=axs[1, 0], label='V3_filtered_new', color='green', linewidth=0.7)
+axs[1, 0].set_title('V3, V3_avg_heart, and V3_filtered_new')
+axs[1, 0].set_xlabel('10min Interval')
+axs[1, 0].set_ylabel('Heart Rate')
+axs[1, 0].legend()
+
+# Plot for V4, V4_avg_heart, and V4_filtered_new
+sns.lineplot(x=new_df_t3.index, y=new_df_t3['V4'], ax=axs[1, 1], label='V4', color='blue', linewidth=0.7)
+sns.lineplot(x=new_df_t3.index, y=new_df_t3['V4_avg_heart'], ax=axs[1, 1], label='V4_avg_heart', color='red', linewidth=0.7)
+sns.lineplot(x=new_df_t3.index, y=new_df_t3['V4_filtered_new'], ax=axs[1, 1], label='V4_filtered_new', color='green', linewidth=0.7)
+axs[1, 1].set_title('V4, V4_avg_heart, and V4_filtered_new')
+axs[1, 1].set_xlabel('10min Interval')
+axs[1, 1].set_ylabel('Heart Rate')
+axs[1, 1].legend()
+
+# Adjust layout
+plt.tight_layout()
+
+# Show the plot
+plt.show()

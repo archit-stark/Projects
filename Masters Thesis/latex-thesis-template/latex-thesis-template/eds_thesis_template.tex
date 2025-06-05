@@ -1,0 +1,274 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% do not change the 12pt and
+%% a4paper setting
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% START OF PREAMBLE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\baselinestretch}{1.1}
+
+\usepackage{amsmath,amssymb,amsthm} 
+\usepackage[toc,page]{appendix}
+\usepackage{longtable,rotating,subcaption}
+\usepackage[margin=3cm]{geometry}
+\usepackage{natbib}
+\usepackage[pdftex,hypertexnames=false,linktocpage=true]{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,anchorcolor=blue,citecolor=blue,filecolor=blue,urlcolor=blue,bookmarksnumbered=true,pdfview=FitB}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Title page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{This is a Fancy and Descriptive Thesis Title}
+\author{
+    John C.\ Doe
+    (VU Student Number: 622537)
+    \\[2ex]
+    supervisor: prof. dr. C.L.\ Xavier\\
+    co-reader: dr.  E. Magneto
+    }
+\date{\today}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\clearpage
+\maketitle
+\thispagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+\noindent Here follows a max 150--200 words abstract that particularly highlights the contributions, what is new, etc., and the main findings.\\[1ex]
+\noindent\textbf{Key words: } here you put key words, separated by commas, and ended with a final point. 
+\end{abstract}
+
+\vfill
+\centerline{\includegraphics[width=0.5\textwidth]{VUlogo.png}}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Contents page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+{
+\pdfbookmark[1]{TABLE OF CONTENTS}{table}
+\tableofcontents
+}
+
+\addtocontents{toc}{~\hfill\textbf{Page}\par}
+\addtocontents{lot}{~\hfill\textbf{Page}\par}
+\addtocontents{lof}{~\hfill\textbf{Page}\par}
+%%
+\addtocontents{toc}{\def\protect\@chapapp{}} \cleardoublepage \phantomsection
+% \tableofcontents
+%\listoffigures
+%\listoftables
+\clearpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction} \label{s:intro}
+
+A good intro typically has the following set-up (compare intros from \textit{Econometrica}, \textit{Journal of Econometrics}, \textit{Journal of Applied Econometrics}:
+\begin{enumerate}
+	\item Paragraph 1: what is this paper about; what is the relevance and motivation of the area;
+	\item Paragraph 2: within this field, which  problem has not received enough attention and why;
+	\item Paragraph 3: that you will fill this gap in the literature (and why), and what your contribution is precisely compared to the existing literature;
+	\item Paragraph 4: how you will fill this gap (what method, technique, \ldots)
+	\item Paragraph 5(--6): What are the main findings that come out of your research;
+	\item Paragraph 6: briefly how your research compares to existing lines of literature (or possibly alternatively refer forward to a literature review section);
+	\item Paragraph 7: how the rest of the thesis is set up; something like
+	\begin{quotation} \small
+	The rest of this thesis is set up as follows. In Section~\ref{s:lit_rev} I review the literature. In Section~\ref{s:model}, I explain the statistical model and its time series properties. Sections~\ref{s:sim} and \ref{s:emp} present the simulation and empirical results, respectively. Finally, Section~\ref{s:concl} concludes.
+	\end{quotation}
+\end{enumerate}
+
+The sections below are for illustration of course.
+In your thesis, it might be the case that a different set-up works better and results in a clearer message to the reader.\footnote{It might be good to have in mind a reader that is in the same MSc Econometrics program as you, and therefore has the same background, but does a thesis on an entirely different topic. It helps you decide what to explain, and what can be taken as common knowledge.}
+
+As a final remark: do not fall into the trap of thinking more pages is better and results in a higher grade. Typically the oppositve happens if the pages are full of redundant material. Be sharp, dense, clear, and concise in your writing style!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Literature review} \label{s:lit_rev}
+
+When you include references, do not hard-code them, but use BiB\TeX referencing, such as \cite{Arnade}.
+Sometimes, you want to cite in parentheses, like this \citep[see the last page of][pg. 1033]{Arnade}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Model} \label{s:model}
+
+If you use a numbered equation like 
+\begin{align}
+	\label{eq:ar1}
+	y_t &= \phi y_{t-1} + \varepsilon_t,
+\end{align}
+then refer to it as equation \eqref{eq:ar1} with relative referencing. Similarly, for sections, figures, tables, subsections, etc., use relative referencing as well. If the number follows, then capitalize the word, so: ``We see the model in Section~\ref{s:model}.''\footnote{So \ldots \textbf{not} ``We see the model in section~\ref{s:model}.''}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Simulations or Theory} \label{s:sim}
+
+Note that figures and tables should be stand-alone.
+The reader must be able to understand everyting in the table without reading any of the surrounding text.
+Also, let tables and figures float to the top of the page or to the next page. Figure~\ref{fig:HIS2_AMZN} is an example. A table example is given in Appendix~\ref{a:emp}.
+See real journal papers for other good examples.
+
+
+%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%
+\begin{figure}[!t]
+	\centering
+	\includegraphics[width = \textwidth]{HIS_2_AMZN.png}
+	\caption{Information Shares for Amazon}
+	\begin{minipage}{\columnwidth} \footnotesize
+	\vspace{1mm}
+	Note: $HIS$ for each interval of AMZN high frequency data sampled every second. Period ranging from 02-01-2020 to 31-01-2020. Each vertical black line represents the start of a new trading day. The information shares are calculated on a 65 minute basis, this results in days being split up in six parts. The mean of all possible orderings of $y_t$ are plotted as well as the upper and lower bounds. The model used is the VECM:
+    \[
+        \Delta y_t = \alpha \beta^\prime y_{t-1} + \sum_{j=1}^{k}\Gamma_{j}\Delta y_{t-j} + \epsilon_t.
+     \]
+     Where $y_t = (MID_t, P_t, WP^{2:5}_t, WP^{6:10}_t)'$. $MID$ represents the mid price, calculated by taking the midpoint of the best BAP. $WP^{n1:n2}$ is the weighted price statistic of the $n1$ to the $n2$ level of the Limit Order Book (LOB). $P$ denotes the most recent transaction price. $k$, the number of lags used in the VECM is selected based on the $AIC$ (Akaike information criterion).
+     \end{minipage}
+     \label{fig:HIS2_AMZN}
+\end{figure}
+
+
+As a general guideline, think carefully about your figures and tables and make them in such a way that many results are in there at once: this is good for the overview of the results for the reader.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Empirical results} \label{s:emp}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusion} \label{s:concl}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{apa}
+\bibliography{bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Apendices
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\footnotesize
+\appendix
+\renewcommand{\thesubsection}{\Alph{section}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Additional derivations} \label{a:deriv}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Additional empirical results} \label{a:emp}
+
+\begin{table}[tb]\centering
+\textbf{\caption{Parameter estimates for the tail shape model}\label{t:ParEst}}
+\begin{minipage}{\columnwidth} \footnotesize
+	\vspace{1mm}
+Parameter estimates for the dynamic tail shape model.
+%
+The second and third columns refer to the first application (equity log-returns).
+Columns labeled S\&P500 and IBM refer to daily log-returns associated with either time series.
+Estimation samples range from 3 July 1962 to 31 December 2020 for the S\&P500 index, and from 2 January  1926 to 31 December 2020 for IBM stock.
+%
+The fourth and fifth columns refer to the second application (changes in sovereign bond yields).
+Columns labeled IT 5y and PT 5y refer to changes in sovereign yields for Italy and Portuguese five-year benchmark bonds, sampled at the 15-minute frequency.
+Estimation samples range from 4 January 2010, 8AM to 31 December 2012, 5PM.
+%
+Standard error estimates are reported in round brackets.
+P-values are in square brackets.
+Standard errors and p-values are based on a sandwich covariance matrix estimator for the first two columns (first illustration),
+and are based on a bootstrap procedure for the last two columns (second illustration).\newline
+\end{minipage}
+
+{\small
+\rule{0mm}{5ex}
+\begin{tabular}{l c c c c c c c}
+\hline \hline
+    & \multicolumn{2}{c}{First illustration}& \ \ & \multicolumn{4}{c}{Second illustration}     \\
+%\hline
+    & {S\&P500} & {IBM}      & & \multicolumn{2}{c}{IT 5y yield} & \multicolumn{2}{c}{PT 5y yield}     \\
+\hline
+$\omega^\xi$	&	-0.001	 &	-0.001	 & & &	& &	\\
+	&	(0.001)	&	(0.000)	 & & &	& &	\\
+	&	[0.116]	&	[0.036]	 & & &	& &	\\
+$\omega^\delta$ & -0.008&-0.006	 & & &	& &	\\
+	&	(0.002)	&	(0.002)	 & & &	& &	\\
+	&	[0.000]	&	[0.001]	 & & &	& &	\\
+$a^\xi$ &	0.024 	&0.023   & & 0.019   & 0.019    &	0.037  & 0.042  \\
+	&	(0.009)	&	(0.004)	 & & (0.002) & (0.002)  & (0.002)  & (0.005)  \\
+	&	[0.004]	&	[0.000]	 & & [0.000] & [0.000]  &  [0.000] & [0.000]  \\
+$a^\delta$& 0.139	&0.126   & & 0.081   & 0.078    &	0.099  & 0.095        \\
+	&	(0.013)	&	(0.017)	 & & (0.003) & (0.003)  & (0.005)  & (0.004)	 \\
+	&	[0.000]	&	[0.000]	 & & [0.000] & [0.000]  & [0.000]  & [0.000]   \\
+$b^\xi$	&0.9996	&	0.9997	 & &         &          &          &   	     \\
+	&	(0.000)	&	(0.001)	 & &         &          &          &   	\\
+	&	[0.000]	&	[0.000]	 & &         &          &          &   	\\
+$b^\delta$&0.991&	0.988    & &         &       	&          &   	\\
+	&	(0.002)	&	(0.004)	 & &         &          &          &   	\\
+	&	[0.000]	&	[0.000]	 & &         &          &          &   	\\
+$c^\xi$	&	  	&	    	 & &         & -6.187   &          & -21.629	 	\\
+	&	     	&	     	 & &         & (1.763)  &    	   & (8.299)	\\
+	&           &	     	 & &         & [0.000]  &          & [0.009]	  	\\
+$c^\delta$	&   &	         & &         & -1.114   &          & -14.964	\\
+	&	    	&	    	 & &         & (0.675)  &          & (3.774)    	\\
+	&	     	&	     	 & &         & [0.099]  &          & [0.000]	  	\\
+\hline
+\rule{0pt}{2ex}
+$\lambda$&	0	&	0	     & &$0.05^{1/32}$&$0.05^{1/32}$&$0.05^{1/32}$&$0.05^{1/32}$	\\
+$a^\tau$ &0.231 &   0.306	 & & 0.341 & 0.341 & 0.566 & 0.566		\\
+$c^\tau$ &      &            & &-0.041 &-0.041 & 0.040 & 0.040      \\
+\hline
+\rule{0pt}{2ex}
+$T$     &     14,726 &     25,028    & &  24,416   & 24,416   & 24,576	   & 24,576      \\
+$T^*$   &      1,474 &      2,504    & &  2,447    & 2,447    &  2,457    &  2,457      \\
+\hline
+loglik  &  -21,895.1 &  -62,683.4    & &  -81,057.0& -81,030.1&-198,641.8 &	-198,605.8  \\
+AIC     &   43,802.2 &   125,378.8   & &  162,122.1& 162,068.2& 397,291.6 &	397,219.6   \\
+BIC     &   43,847.8 &   125,427.6   & &  162,154.5& 162,100.2& 397,324.0 &	397,252.0   \\
+\hline \hline
+\end{tabular}
+}
+\end{table}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
